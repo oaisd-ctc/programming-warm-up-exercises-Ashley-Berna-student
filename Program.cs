@@ -25,6 +25,7 @@ namespace NoviceChallenges
             // Console.WriteLine("Does this sentance start with 'Hello'? " + hello + " " + StartsHello(hello));
             // Console.WriteLine(greeting + " reversed is, " + ReverseString(greeting));
             //Console.WriteLine("The factorial of " + b + " is " + Factorial(b));
+            //Console.WriteLine("is " + d + " a prime number? " + IsPrime(d));
         }
 
         // 1. Return the sum of two numbers.
@@ -111,7 +112,7 @@ namespace NoviceChallenges
                 if (number % i == 0) return false;
             }
             // TODO: Return the correct boolean value.
-            return false;
+            return true;
         }
 
         // 9. Return the nth Fibonacci number.
