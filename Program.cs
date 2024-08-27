@@ -30,8 +30,9 @@ namespace NoviceChallenges
             //Console.WriteLine("The factorial of " + b + " is " + Factorial(b));
             //Console.WriteLine("is " + d + " a prime number? " + IsPrime(d));
             //Console.WriteLine("The fibonacci of " + c + " is " + Fibonacci(c));
-            //Console.WriteLine($"{String.Join(",",e)}. The biggest number is {LargestInArray(e)}");
+            //Console.WriteLine($"{String.Join( ", ",e)}. The biggest number is {LargestInArray(e)}");
             //Console.WriteLine($"is this message a palindrome? {palendrome}. {IsPalindrome(palendrome)}");
+            //Console.WriteLine($"The sum of {String.Join( ", ",e)} is {ArraySum(e)}");
         }
 
         // 1. Return the sum of two numbers.
@@ -169,6 +170,10 @@ namespace NoviceChallenges
         {
             int sum = 0;
             // TODO: Calculate the sum of the array's elements.
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                sum += numbers[i];
+            }
             return sum;
         }
 
