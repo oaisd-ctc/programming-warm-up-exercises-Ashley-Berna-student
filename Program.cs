@@ -34,6 +34,7 @@ namespace NoviceChallenges
             //Console.WriteLine($"is this message a palindrome? {palendrome}. {IsPalindrome(palendrome)}");
             //Console.WriteLine($"The sum of {String.Join( ", ",e)} is {ArraySum(e)}");
             //Console.WriteLine($"The number of times the letter h appears in '{greeting}' is: {CharCount(greeting, 'h')}");
+            //Console.WriteLine($"Greeting 1, {hello}, and Greeting 2, {greeting}, put together is {ConcatenateStrings(hello, greeting)}");
         }
 
         // 1. Return the sum of two numbers.
@@ -197,7 +198,8 @@ namespace NoviceChallenges
         public static string ConcatenateStrings(string str1, string str2)
         {
             // TODO: Concatenate the two strings with a space in between.
-            return "";
+            string conStr = string.Concat(str1, " ", str2);
+            return conStr;
         }
 
         // 15. Given a string, return a new string where the first and last characters have been swapped.
