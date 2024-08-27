@@ -26,6 +26,7 @@ namespace NoviceChallenges
             // Console.WriteLine(greeting + " reversed is, " + ReverseString(greeting));
             //Console.WriteLine("The factorial of " + b + " is " + Factorial(b));
             //Console.WriteLine("is " + d + " a prime number? " + IsPrime(d));
+            //Console.WriteLine("The fibonacci of " + c + " is " + Fibonacci(c));
         }
 
         // 1. Return the sum of two numbers.
@@ -120,7 +121,10 @@ namespace NoviceChallenges
         {
             if (n <= 1) return n;
             // TODO: Calculate the nth Fibonacci number.
-            return 0;
+            else
+            {
+                return Fibonacci(n - 1) + Fibonacci(n - 2);
+            }
         }
 
         // 10. Given an array of integers, return the largest number.
