@@ -13,6 +13,7 @@ namespace NoviceChallenges
             int b = 0;
             int c = 5;
             int d = 10;
+            int[] e = {1, 2, 3, 4, 5};
             string words = "abcdefg";
             string hello = "Hello, how are you?";
             string greeting = "hi, how are you?";
@@ -27,6 +28,7 @@ namespace NoviceChallenges
             //Console.WriteLine("The factorial of " + b + " is " + Factorial(b));
             //Console.WriteLine("is " + d + " a prime number? " + IsPrime(d));
             //Console.WriteLine("The fibonacci of " + c + " is " + Fibonacci(c));
+            //Console.WriteLine($"{String.Join(",",e)}. The biggest number is {LargestInArray(e)}");
         }
 
         // 1. Return the sum of two numbers.
@@ -134,6 +136,10 @@ namespace NoviceChallenges
             for (int i = 1; i < numbers.Length; i++)
             {
                 // TODO: Find the largest number in the array.
+                if (numbers[i] > largest)
+                {
+                    largest = numbers[i];
+                }
             }
             return largest;
         }
