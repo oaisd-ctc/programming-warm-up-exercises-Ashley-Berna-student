@@ -18,11 +18,12 @@ namespace NoviceChallenges
             string greeting = "hi, how are you?";
 
             // Use the Main method to test your functions.
-            Console.WriteLine(c + " + " + d + " = " + Add(c, d));
-            Console.WriteLine("Is this number even? " + a + " " + IsEven(5));
-            Console.WriteLine(b + ", " + c + ", " + d + " here is the biggest number " + MaxOfThree(b, c, d));
-            Console.WriteLine("The length of " + words + " is " + StringLength(words));
-            Console.WriteLine("Does this sentance start with 'Hello'? " + hello + " " + StartsHello(hello));
+            // Console.WriteLine(c + " + " + d + " = " + Add(c, d));
+            // Console.WriteLine("Is this number even? " + a + " " + IsEven(5));
+            // Console.WriteLine(b + ", " + c + ", " + d + " here is the biggest number " + MaxOfThree(b, c, d));
+            // Console.WriteLine("The length of " + words + " is " + StringLength(words));
+            // Console.WriteLine("Does this sentance start with 'Hello'? " + hello + " " + StartsHello(hello));
+            // Console.WriteLine(greeting + " reversed is, " + ReverseString(greeting));
         }
 
         // 1. Return the sum of two numbers.
@@ -81,6 +82,7 @@ namespace NoviceChallenges
         {
             char[] charArray = s.ToCharArray();
             // TODO: Reverse the charArray.
+            Array.Reverse(charArray);
             return new string(charArray);
         }
 
