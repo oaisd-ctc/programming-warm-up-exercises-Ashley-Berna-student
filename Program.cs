@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Numerics;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 namespace NoviceChallenges
@@ -13,12 +14,15 @@ namespace NoviceChallenges
             int c = 5;
             int d = 10;
             string words = "abcdefg";
-            
+            string hello = "Hello, how are you?";
+            string greeting = "hi, how are you?";
+
             // Use the Main method to test your functions.
             Console.WriteLine(c + " + " + d + " = " + Add(c, d));
             Console.WriteLine("Is this number even? " + a + " " + IsEven(5));
             Console.WriteLine(b + ", " + c + ", " + d + " here is the biggest number " + MaxOfThree(b, c, d));
             Console.WriteLine("The length of " + words + " is " + StringLength(words));
+            Console.WriteLine("Does this sentance start with 'Hello'? " + hello + " " + StartsHello(hello));
         }
 
         // 1. Return the sum of two numbers.
@@ -65,6 +69,10 @@ namespace NoviceChallenges
         {
             // HINT: Use the string method "StartsWith".
             // TODO: Implement this method.
+            if (s.StartsWith("Hello"))
+            {
+                return true;
+            }
             return false;
         }
 
