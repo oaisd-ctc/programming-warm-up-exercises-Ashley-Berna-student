@@ -14,6 +14,8 @@ namespace NoviceChallenges
             int c = 5;
             int d = 10;
             int[] e = {1, 2, 3, 4, 5};
+            int[] f = {5, 4, 10, -3};
+            int[] g = {-10, 3, 8, 9, 20};
             string words = "abcdefg";
             string hello = "Hello, how are you?";
             string greeting = "hi, how are you?";
@@ -21,21 +23,94 @@ namespace NoviceChallenges
             string notPalendrome = hello;
 
             //Use the Main method to test your functions.
-            Console.WriteLine(c + " + " + d + " = " + Add(c, d));
-            Console.WriteLine("Is this number even? " + a + " " + IsEven(5));
-            Console.WriteLine(b + ", " + c + ", " + d + " here is the biggest number " + MaxOfThree(b, c, d));
-            Console.WriteLine("The length of " + words + " is " + StringLength(words));
-            Console.WriteLine("Does this sentance start with 'Hello'? " + hello + " " + StartsHello(hello));
-            Console.WriteLine(greeting + " reversed is, " + ReverseString(greeting));
-            Console.WriteLine("The factorial of " + b + " is " + Factorial(b));
-            Console.WriteLine("is " + d + " a prime number? " + IsPrime(d));
-            Console.WriteLine("The fibonacci of " + c + " is " + Fibonacci(c));
+            //Add()
+            Console.WriteLine($"{c} + {d} = {Add(c, d)}");
+            Console.WriteLine($"{a} + {d} = {Add(a, d)}");
+            Console.WriteLine($"{a} + {b} = {Add(a, b)}");
+            Console.WriteLine("");
+
+            //IsEven()
+            Console.WriteLine($"Is this number even? {a} {IsEven(a)}");
+            Console.WriteLine($"Is this number even? {d} {IsEven(d)}");
+            Console.WriteLine($"Is this number even? {b} {IsEven(b)}");
+            Console.WriteLine("");
+
+            //MaxOfThree()
+            Console.WriteLine($"{a}, {b}, {c}. Here is the biggest number: {MaxOfThree(b, c, a)}");
+            Console.WriteLine($"{a}, {d}, {c}. Here is the biggest number: {MaxOfThree(d, c, a)}");
+            Console.WriteLine($"{d}, {b}, {c}. Here is the biggest number: {MaxOfThree(b, c, d)}");
+            Console.WriteLine("");
+
+            //StringLength()
+            Console.WriteLine($"The length of '{words}' is: {StringLength(words)}");
+            Console.WriteLine($"The length of '{hello}' is: {StringLength(hello)}");
+            Console.WriteLine($"The length of '{greeting}' is: {StringLength(greeting)}");
+            Console.WriteLine("");
+
+
+            Console.WriteLine($"Does this sentance start with 'Hello'? {hello}, {StartsHello(hello)}");
+            Console.WriteLine($"Does this sentance start with 'Hello'? {greeting}, {StartsHello(greeting)}");
+            Console.WriteLine($"Does this sentance start with 'Hello'? {palendrome}, {StartsHello(palendrome)}");
+            Console.WriteLine("");
+
+
+            Console.WriteLine($"{greeting} reversed is: {ReverseString(greeting)}");
+            Console.WriteLine($"{hello} reversed is: {ReverseString(hello)}");
+            Console.WriteLine($"{palendrome} reversed is: {ReverseString(palendrome)}");
+            Console.WriteLine("");
+
+
+            Console.WriteLine($"The factorial of {b} is: {Factorial(b)}");
+            Console.WriteLine($"The factorial of {c} is: {Factorial(c)}");
+            Console.WriteLine($"The factorial of {d} is: {Factorial(d)}");
+            Console.WriteLine("");
+
+
+            Console.WriteLine($"is {d} a prime number? {IsPrime(d)}");
+            Console.WriteLine($"is {b} a prime number? {IsPrime(b)}");
+            Console.WriteLine($"is {c} a prime number? {IsPrime(c)}");
+            Console.WriteLine("");
+
+
+            Console.WriteLine($"The fibonacci of {c} is: {Fibonacci(c)}");
+            Console.WriteLine($"The fibonacci of {b} is: {Fibonacci(b)}");
+            Console.WriteLine($"The fibonacci of {d} is: {Fibonacci(d)}");
+            Console.WriteLine("");
+
+
             Console.WriteLine($"{String.Join( ", ",e)}. The biggest number is {LargestInArray(e)}");
+            Console.WriteLine($"{String.Join( ", ",f)}. The biggest number is {LargestInArray(f)}");
+            Console.WriteLine($"{String.Join( ", ",g)}. The biggest number is {LargestInArray(g)}");
+            Console.WriteLine("");
+
+
             Console.WriteLine($"is this message a palindrome? {palendrome}. {IsPalindrome(palendrome)}");
+            Console.WriteLine($"is this message a palindrome? {hello}. {IsPalindrome(hello)}");
+            Console.WriteLine($"is this message a palindrome? {greeting}. {IsPalindrome(greeting)}");
+            Console.WriteLine("");
+
+
             Console.WriteLine($"The sum of {String.Join( ", ",e)} is {ArraySum(e)}");
+            Console.WriteLine($"The sum of {String.Join( ", ",f)} is {ArraySum(f)}");
+            Console.WriteLine($"The sum of {String.Join( ", ",g)} is {ArraySum(g)}");
+            Console.WriteLine("");
+
+
             Console.WriteLine($"The number of times the letter h appears in '{greeting}' is: {CharCount(greeting, 'h')}");
-            Console.WriteLine($"Greeting 1, {hello}, and Greeting 2, {greeting}, put together is {ConcatenateStrings(hello, greeting)}");
+            Console.WriteLine($"The number of times the letter w appears in '{hello}' is: {CharCount(hello, 'w')}");
+            Console.WriteLine($"The number of times the letter a appears in '{palendrome}' is: {CharCount(palendrome, 'a')}");
+            Console.WriteLine("");
+
+
+            Console.WriteLine($"sentance 1, {hello}, and sentance 2, {greeting}, put together is {ConcatenateStrings(hello, greeting)}");
+            Console.WriteLine($"sentance 1, {palendrome}, and sentance 2, {greeting}, put together is {ConcatenateStrings(palendrome, greeting)}");
+            Console.WriteLine($"sentance 1, {hello}, and sentance 2, {palendrome}, put together is {ConcatenateStrings(hello, palendrome)}");
+            Console.WriteLine("");
+
+
             Console.WriteLine($"Swapping the first and last letter of this sentance, {hello}. {SwapEnds(hello)}");
+            Console.WriteLine($"Swapping the first and last letter of this sentance, {greeting}. {SwapEnds(greeting)}");
+            Console.WriteLine($"Swapping the first and last letter of this sentance, {palendrome}. {SwapEnds(palendrome)}");
         }
 
         // 1. Return the sum of two numbers.
