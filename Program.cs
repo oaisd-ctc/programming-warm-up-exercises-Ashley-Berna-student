@@ -24,6 +24,7 @@ namespace NoviceChallenges
             // Console.WriteLine("The length of " + words + " is " + StringLength(words));
             // Console.WriteLine("Does this sentance start with 'Hello'? " + hello + " " + StartsHello(hello));
             // Console.WriteLine(greeting + " reversed is, " + ReverseString(greeting));
+            //Console.WriteLine("The factorial of " + b + " is " + Factorial(b));
         }
 
         // 1. Return the sum of two numbers.
@@ -90,8 +91,15 @@ namespace NoviceChallenges
         public static int Factorial(int n)
         {
             if (n == 0) return 1;
+            else
+            {
+                for (int i = n - 1; i > 0; i--)
+                {
+                    n *= i;
+                }
+                return n;
+            }
             // TODO: Calculate the factorial.
-            return 0;
         }
 
         // 8. Check if a number is a prime number.
