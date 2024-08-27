@@ -20,21 +20,22 @@ namespace NoviceChallenges
             string palendrome = "madam";
             string notPalendrome = hello;
 
-            // Use the Main method to test your functions.
-            // Console.WriteLine(c + " + " + d + " = " + Add(c, d));
-            // Console.WriteLine("Is this number even? " + a + " " + IsEven(5));
-            // Console.WriteLine(b + ", " + c + ", " + d + " here is the biggest number " + MaxOfThree(b, c, d));
-            // Console.WriteLine("The length of " + words + " is " + StringLength(words));
-            // Console.WriteLine("Does this sentance start with 'Hello'? " + hello + " " + StartsHello(hello));
-            // Console.WriteLine(greeting + " reversed is, " + ReverseString(greeting));
-            //Console.WriteLine("The factorial of " + b + " is " + Factorial(b));
-            //Console.WriteLine("is " + d + " a prime number? " + IsPrime(d));
-            //Console.WriteLine("The fibonacci of " + c + " is " + Fibonacci(c));
-            //Console.WriteLine($"{String.Join( ", ",e)}. The biggest number is {LargestInArray(e)}");
-            //Console.WriteLine($"is this message a palindrome? {palendrome}. {IsPalindrome(palendrome)}");
-            //Console.WriteLine($"The sum of {String.Join( ", ",e)} is {ArraySum(e)}");
-            //Console.WriteLine($"The number of times the letter h appears in '{greeting}' is: {CharCount(greeting, 'h')}");
-            //Console.WriteLine($"Greeting 1, {hello}, and Greeting 2, {greeting}, put together is {ConcatenateStrings(hello, greeting)}");
+            //Use the Main method to test your functions.
+            Console.WriteLine(c + " + " + d + " = " + Add(c, d));
+            Console.WriteLine("Is this number even? " + a + " " + IsEven(5));
+            Console.WriteLine(b + ", " + c + ", " + d + " here is the biggest number " + MaxOfThree(b, c, d));
+            Console.WriteLine("The length of " + words + " is " + StringLength(words));
+            Console.WriteLine("Does this sentance start with 'Hello'? " + hello + " " + StartsHello(hello));
+            Console.WriteLine(greeting + " reversed is, " + ReverseString(greeting));
+            Console.WriteLine("The factorial of " + b + " is " + Factorial(b));
+            Console.WriteLine("is " + d + " a prime number? " + IsPrime(d));
+            Console.WriteLine("The fibonacci of " + c + " is " + Fibonacci(c));
+            Console.WriteLine($"{String.Join( ", ",e)}. The biggest number is {LargestInArray(e)}");
+            Console.WriteLine($"is this message a palindrome? {palendrome}. {IsPalindrome(palendrome)}");
+            Console.WriteLine($"The sum of {String.Join( ", ",e)} is {ArraySum(e)}");
+            Console.WriteLine($"The number of times the letter h appears in '{greeting}' is: {CharCount(greeting, 'h')}");
+            Console.WriteLine($"Greeting 1, {hello}, and Greeting 2, {greeting}, put together is {ConcatenateStrings(hello, greeting)}");
+            Console.WriteLine($"Swapping the first and last letter of this sentance, {hello}. {SwapEnds(hello)}");
         }
 
         // 1. Return the sum of two numbers.
@@ -209,7 +210,7 @@ namespace NoviceChallenges
             char firstChar = s[0];
             char lastChar = s[s.Length - 1];
             // TODO: Swap the first and last characters and return the modified string.
-            return "";
+            return lastChar + s.Substring(1, s.Length - 2) + firstChar;
         }
     }
 }
