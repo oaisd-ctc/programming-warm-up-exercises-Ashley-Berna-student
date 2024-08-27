@@ -17,6 +17,8 @@ namespace NoviceChallenges
             string words = "abcdefg";
             string hello = "Hello, how are you?";
             string greeting = "hi, how are you?";
+            string palendrome = "madam";
+            string notPalendrome = hello;
 
             // Use the Main method to test your functions.
             // Console.WriteLine(c + " + " + d + " = " + Add(c, d));
@@ -29,6 +31,7 @@ namespace NoviceChallenges
             //Console.WriteLine("is " + d + " a prime number? " + IsPrime(d));
             //Console.WriteLine("The fibonacci of " + c + " is " + Fibonacci(c));
             //Console.WriteLine($"{String.Join(",",e)}. The biggest number is {LargestInArray(e)}");
+            //Console.WriteLine($"is this message a palindrome? {palendrome}. {IsPalindrome(palendrome)}");
         }
 
         // 1. Return the sum of two numbers.
@@ -148,7 +151,17 @@ namespace NoviceChallenges
         public static bool IsPalindrome(string s)
         {
             // TODO: Determine if the string is a palindrome.
-            return false;
+            char[] cArray = s.ToCharArray();
+            Array.Reverse(cArray);
+            string revStr = new string(cArray);
+            if (s == revStr)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         // 12. Given an array of integers, return the sum of its elements.
