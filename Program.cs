@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Numerics;
+using System.Runtime.InteropServices;
 
 namespace NoviceChallenges
 {
@@ -6,21 +8,36 @@ namespace NoviceChallenges
     {
         static void Main(string[] args)
         {
+            int a = -1;
+            int b = 0;
+            int c = 5;
+            int d = 10;
             // Use the Main method to test your functions.
+            Console.WriteLine(c + " + " + d + " = " + Add(c, d));
+            Console.WriteLine("Is this number even? " + a + " " + IsEven(5));
+            Console.WriteLine(b + ", " + c + ", " + d + " here is the biggest number " + MaxOfThree(b, c, d));
         }
 
         // 1. Return the sum of two numbers.
         public static int Add(int a, int b)
         {
             // TODO: Implement this method.
-            return 0;
+            int solution = a + b;
+            return solution;
         }
 
         // 2. Given an integer, return true if it's even, else return false.
         public static bool IsEven(int number)
         {
             // TODO: Implement this method.
-            return false;
+            if (number % 2 == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         // 3. Return the largest of three numbers.
@@ -28,7 +45,8 @@ namespace NoviceChallenges
         {
             // HINT: You might want to use Math.Max function.
             // TODO: Implement this method.
-            return 0;
+            int biggerNum = Math.Max(a, b);
+            return Math.Max(biggerNum, c);
         }
 
         // 4. Return the length of the given string.
