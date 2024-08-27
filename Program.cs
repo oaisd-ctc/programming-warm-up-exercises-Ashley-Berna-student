@@ -12,10 +12,13 @@ namespace NoviceChallenges
             int b = 0;
             int c = 5;
             int d = 10;
+            string words = "abcdefg";
+            
             // Use the Main method to test your functions.
             Console.WriteLine(c + " + " + d + " = " + Add(c, d));
             Console.WriteLine("Is this number even? " + a + " " + IsEven(5));
             Console.WriteLine(b + ", " + c + ", " + d + " here is the biggest number " + MaxOfThree(b, c, d));
+            Console.WriteLine("The length of " + words + " is " + StringLength(words));
         }
 
         // 1. Return the sum of two numbers.
@@ -53,7 +56,8 @@ namespace NoviceChallenges
         public static int StringLength(string s)
         {
             // TODO: Implement this method.
-            return 0;
+            int length = s.Length;
+            return length;
         }
 
         // 5. Return true if the string starts with "Hello", otherwise return false.
