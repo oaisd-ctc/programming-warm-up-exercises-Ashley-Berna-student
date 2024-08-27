@@ -33,6 +33,7 @@ namespace NoviceChallenges
             //Console.WriteLine($"{String.Join( ", ",e)}. The biggest number is {LargestInArray(e)}");
             //Console.WriteLine($"is this message a palindrome? {palendrome}. {IsPalindrome(palendrome)}");
             //Console.WriteLine($"The sum of {String.Join( ", ",e)} is {ArraySum(e)}");
+            //Console.WriteLine($"The number of times the letter h appears in '{greeting}' is: {CharCount(greeting, 'h')}");
         }
 
         // 1. Return the sum of two numbers.
@@ -182,6 +183,13 @@ namespace NoviceChallenges
         {
             int count = 0;
             // TODO: Count how many times character c appears in string s.
+            int n = 0;
+
+            while ((n = s.IndexOf(c, n) + 1) !=0)
+            {
+                n++;
+                count++;
+            }
             return count;
         }
 
